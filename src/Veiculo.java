@@ -1,8 +1,8 @@
 public abstract class Veiculo {
 
-    private String marca;
-    private String modelo;
-    private int ano;
+    private final String marca;
+    private final String modelo;
+    private final int ano;
     private boolean alugado;
 
     public Veiculo(String marca, String modelo, int ano, boolean alugado) {
@@ -12,16 +12,8 @@ public abstract class Veiculo {
         this.alugado = alugado;
     }
 
-    public String getMarca() {
-        return marca;
-    }
-
     public String getModelo() {
         return modelo;
-    }
-
-    public int getAno() {
-        return ano;
     }
 
     public boolean isAlugado() {

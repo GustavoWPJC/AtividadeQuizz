@@ -1,6 +1,6 @@
 public class Caminhao extends Veiculo{
 
-    private double capacidadeCarga;
+    private final double capacidadeCarga;
 
     public Caminhao(String marca, String modelo, int ano, boolean alugado, double capacidadeCarga) {
         super(marca, modelo, ano, alugado);
@@ -9,10 +9,6 @@ public class Caminhao extends Veiculo{
 
     public double getCapacidadeCarga() {
         return capacidadeCarga;
-    }
-
-    public void setCapacidadeCarga(double capacidadeCarga) {
-        this.capacidadeCarga = capacidadeCarga;
     }
 
     @Override

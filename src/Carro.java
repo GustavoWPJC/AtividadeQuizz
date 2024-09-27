@@ -1,6 +1,6 @@
 public class Carro extends Veiculo {
 
-    private int quantidadePortas;
+    private final int quantidadePortas;
 
     public Carro(String marca, String modelo, int ano, boolean alugado, int quantidadePortas) {
         super(marca, modelo, ano, alugado);
